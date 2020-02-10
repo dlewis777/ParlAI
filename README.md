@@ -4,6 +4,17 @@
 
 --------------------------------------------------------------------------------
 
+I trained 2 models or 24 hours and all they did was repeat the same thing over and over, both with different architectures. The commands I used to train them are below.
+
+$ python examples/train_model.py -t twitter -m seq2seq/seq2seq -mf ~/exp1 -bs 10 -stim 3600 -hs 256 -esz 512 -dr 0.5 -bi True -rnn gru -attn general
+
+$ python examples/train_model.py -t twitter -m seq2seq/seq2seq -mf ~/exp0 -bs 10 -stim 3600 -hs 256 -esz 512 -dr 0.5 -bi -rnn gru
+
+Both didn't do well and it seemed like they didnt finish a single epoch of training on a K80 as seen in the training stats file.
+
+
+
+===============================================================================
 [ParlAI](http://parl.ai) (pronounced “par-lay”) is a python framework for
 sharing, training and testing dialogue models, from open-domain chitchat to
 VQA (Visual Question Answering).
