@@ -17,6 +17,7 @@ I only included 1 chat log from my model (mymodel.json) from exp1 (the model wit
 perplexity of exp0, the simpler model hovered around 800 which is extremely high, and exp1 was 2000. exp0 had only completed .6 of an epoch, and exp1 completed .4. This is in 24 hours trained on GPU which seems a little slow to me.
 
 For converting to forever chat I used AADeLucia's fork of ParlAI with the hack.
+I was also unable to upload the checkpoint file to github since it was too big. Please let me know the best way to get it to you.
 
 ===============================================================================
 [ParlAI](http://parl.ai) (pronounced “par-lay”) is a python framework for
