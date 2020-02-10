@@ -12,7 +12,9 @@ $ python examples/train_model.py -t twitter -m seq2seq/seq2seq -mf ~/exp0 -bs 10
 
 Both didn't do well and it seemed like they didnt finish a single epoch of training on a K80 as seen in the training stats file.
 
+I only included 1 chat log from my model (mymodel.json) from exp1 (the model with attention) since all output was the same, and seemed repetative to add more files. 
 
+perplexity of exp0, the simpler model hovered around 800 which is extremely high, and exp1 was 2000. exp0 had only completed .6 of an epoch, and exp1 completed .4. This is in 24 hours trained on GPU which seems a little slow to me.
 
 ===============================================================================
 [ParlAI](http://parl.ai) (pronounced “par-lay”) is a python framework for
